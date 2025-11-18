@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Framework</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Main JS -->
+    <script defer src="/assets/js/main.js"></script>
+</head>
+
+
+<body class="bg-light">
+
+    <!-- Mobile menu button -->
+    <button class="btn btn-dark d-md-none mb-1 ms-4 mt-4" id="menu-toggle">
+        <i class="bi bi-list fs-3"></i>
+    </button>
+
+    <div class="container-fluid">
+        <div class="row main-row">
+
+
+            <!-- Sidebar -->
+            <aside class="col-md-2 bg-sidebar p-4 sidebar" id="sidebar">
+                <h5 class="mt-1 mb-5 text-center">
+                    <i class="bi bi-github fs-3 me-1"></i>
+                    Dashboard Kit
+                </h5>
+
+                <nav>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-3 fs-6">
+                            <a class="nav-link active" href="#">
+                                <i class="bi bi-pie-chart-fill me-3"></i>
+                                Overview
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-ticket-detailed me-3"></i>
+                                Tickets
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-lightbulb-fill me-3"></i>
+                                Ideas
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-people-fill me-3"></i>
+                                Contacts
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-person-fill me-3"></i>
+                                Agents
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-journals me-3"></i>
+                                Articles
+                            </a>
+                        </li>
+
+                        <hr class="sidebar-divider">
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-gear-fill me-3"></i>
+                                Settings
+                            </a>
+                        </li>
+
+                        <li class="nav-item mb-3">
+                            <a class="nav-link" href="#">
+                                <i class="bi bi-award-fill me-3"></i>
+                                Subscription
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+
+            <!-- Main Content -->
+            <main class="col-md-10 col-12 p-4">
+
+                <!-- Header -->
+                <header class="d-flex justify-content-between align-items-center mb-5">
+                    <h4>Overview</h4>
+
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-search me-4"></i>
+                        <i class="bi bi-bell-fill me-4"></i>
+
+                        <span class="d-flex align-items-center ps-4 pe-3 border-start">Daisy Ye</span>
+
+                        <div class="rounded-circle border border-2 p-1 d-inline-block">
+                            <img src="/assets/images/Daisy.jpg" class="rounded-circle" width="40" alt="Daisy">
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Status Cards -->
+                <section class="row g-4 mb-4">
+                    <div class="col-6 col-md-3">
+                        <div class="card p-4 text-center status-card">
+                            <h5 class="card-title-gray">Unresolved</h5>
+                            <h1>60</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card p-4 text-center status-card">
+                            <h5 class="card-title-gray">Overdue</h5>
+                            <h1>16</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card p-4 text-center status-card">
+                            <h5 class="card-title-gray">Open</h5>
+                            <h1>43</h1>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-3">
+                        <div class="card p-4 text-center status-card">
+                            <h5 class="card-title-gray">On Hold</h5>
+                            <h1>64</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Today's Trends -->
+                <section class="card mb-4">
+                    <div class="row g-0">
+
+                        <div class="col-md-8 p-5 border-end">
+                            <h5>Today's trends</h5>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p>as of 16th November 2025, 11:59 PM</p>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="trend-date-item active">
+                                        <span class="line"></span>
+                                        <span class="label">Today</span>
+                                    </div>
+
+                                    <div class="trend-date-item">
+                                        <span class="line"></span>
+                                        <span class="label">Yesterday</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <img src="/assets/images/Graph.png" class="img-fluid" alt="Graph Data Display">
+                        </div>
+
+                        <aside class="col-md-4 d-flex flex-column justify-content-around text-center">
+                            <div class="trend-item border-bottom">
+                                <h6>Resolved</h6>
+                                <h4>449</h4>
+                            </div>
+
+                            <div class="trend-item border-bottom">
+                                <h6>Received</h6>
+                                <h4>426</h4>
+                            </div>
+
+                            <div class="trend-item border-bottom">
+                                <h6>Average first response time</h6>
+                                <h4>33m</h4>
+                            </div>
+
+                            <div class="trend-item border-bottom">
+                                <h6>Average response time</h6>
+                                <h4>3h 8m</h4>
+                            </div>
+
+                            <div class="trend-item">
+                                <h6>Resolution within SLA</h6>
+                                <h4>94%</h4>
+                            </div>
+                        </aside>
+
+                    </div>
+                </section>
+
+                <!-- Bottom two cards -->
+                <section class="row">
+                    <article class="col-lg-6 mb-4">
+                        <!-- Unresolved Tickets -->
+                        <div class="card unresolved-card">
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="pt-4 ps-4 mb-0">Unresolved Tickets</h5>
+                                <a href="#" class="view-details pt-4 pe-4 text-decoration-none">View details</a>
+                            </div>
+
+                            <p class="text-muted small mb-5 ps-4">Group: <strong>Support</strong></p>
+
+                            <div class="unresolved-item d-flex justify-content-between border-bottom ps-4 pe-4 mb-4">
+                                <span>Waiting on Feature Request</span>
+                                <span class="count">4238</span>
+                            </div>
+
+                            <div class="unresolved-item d-flex justify-content-between border-bottom ps-4 pe-4 mb-4">
+                                <span>Awaiting Customer Response</span>
+                                <span class="count">1005</span>
+                            </div>
+
+                            <div class="unresolved-item d-flex justify-content-between border-bottom ps-4 pe-4 mb-4">
+                                <span>Awaiting Developer Fix</span>
+                                <span class="count">914</span>
+                            </div>
+
+                            <div class="unresolved-item d-flex justify-content-between ps-4 pe-4 mb-4">
+                                <span>Pending</span>
+                                <span class="count">281</span>
+                            </div>
+
+                        </div>
+                    </article>
+
+                    <!-- Tasks -->
+                    <article class="col-lg-6 mb-4">
+                        <div class="card tasks-card">
+
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <h5 class="pt-4 ps-4 mb-0">Tasks</h5>
+                                <a href="#" class="view-details pt-4 pe-4 text-decoration-none">View all</a>
+                            </div>
+
+                            <p class="text-muted small mb-5 ps-4">Today</p>
+
+                            <div class="task-item">
+                                <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-4 mb-4">
+                                    <span>Create new task</span>
+                                    <i class="bi bi-plus-square-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="task-item">
+                                <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-4 mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input round-check me-2">
+                                        <span>Finish ticket update</span>
+                                    </div>
+                                    <span class="badge bg-warning text-white">URGENT</span>
+                                </div>
+                            </div>
+
+                            <div class="task-item">
+                                <div class="d-flex justify-content-between align-items-center border-bottom ps-4 pe-4 mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input round-check me-2">
+                                        <span>Create new ticket example</span>
+                                    </div>
+                                    <span class="badge bg-success text-white">NEW</span>
+                                </div>
+                            </div>
+
+                            <div class="task-item">
+                                <div class="d-flex justify-content-between align-items-center ps-4 pe-4 mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <input type="checkbox" class="form-check-input round-check me-2">
+                                        <span>Update ticket report</span>
+                                    </div>
+                                    <span class="badge bg-light text-secondary">DEFAULT</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <!-- Backdrop -->
+    <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

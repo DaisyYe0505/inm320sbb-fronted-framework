@@ -1,0 +1,15 @@
+{
+  "name": "inm320sbb_frontend-framework_daisy-ye",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "Daisy Ye",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "description": ""
+}
